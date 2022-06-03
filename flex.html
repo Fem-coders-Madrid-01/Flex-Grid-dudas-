@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FLEX</title>
+    <style>
+        .container-flex{
+            display: flex;
+            /* background-color: black; *//*  descomentar este color para ver el espacio del contenedor */
+            /* height: 100vh; */ /* descomentar esta propiedad, y jugar con los valores para ver como align center va en medio del TAMAÑO del contenedor */
+            align-items: center; /* quiero alinearlo a la mitad de la pantalla,
+                                 pero no funciona porque el tamaño de mi contenedor es del mismo tamaño que el contenido, no tiene espacio para moverse, ya está en el centro del contenedor */
+        }
+        .container-flex > div{
+            border: 2px solid red;
+            color: aliceblue;
+            height: 100px;
+            width: 100px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container-flex">
+        <div>child1</div>
+        <div>child2</div>
+        <div>child3</div>
+        <div>child4</div>
+    </div>
+</body>
+</html>

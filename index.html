@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GRID</title>
+    <style>
+        .container-grid {
+            background-color: rgb(107, 73, 73);
+            display: grid;
+            grid-gap: 10px;
+            grid-template-columns: 20% 20% 20% 20% 20%; 
+            /* divide en 5 columnas (columns), pero tenemos 10 items, así que 2 pares de columnas */
+            grid-template-rows: 100px 300px;
+          /*   especifica que de esos dos pares de columnas, cuanto ocupa cada uno en cuanto a tamaño de fila(rows) */
+        }
+
+        .container-grid>div {
+            background-color: rgba(255, 255, 255, 0.8);
+            text-align: center;
+            padding: 20px 0;
+            font-size: 40px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container-grid">
+        <div class="child1">child1</div>
+        <div class="child2">child2</div>
+        <div>child3</div>
+        <div>child4</div>
+        <div>child5</div>
+        <div>child6</div>
+        <div>child7</div>
+        <div>child8</div>
+        <div>child9</div>
+        <div>child10</div>
+    </div>
+</body>
+
+</html>
